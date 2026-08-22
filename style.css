@@ -988,6 +988,109 @@ section[id] {
   line-height: 1.6;
 }
 
+/* ----- Builder Before/After sample ----- */
+.case-hero {
+  padding: 128px 0 72px;
+  background: var(--color-primary-light);
+}
+
+.case-hero__back {
+  display: inline-block;
+  margin-bottom: 28px;
+  font-size: 0.875rem;
+  color: var(--color-primary);
+}
+
+.case-hero h1,
+.case-cta h2 {
+  font-size: 2rem;
+  line-height: 1.45;
+  margin-bottom: 18px;
+}
+
+.case-hero > .container > p:not(.section__label) {
+  max-width: 720px;
+  color: var(--color-text-light);
+}
+
+.case-hero__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.case-hero__chips span {
+  padding: 5px 10px;
+  border: 1px solid rgba(26, 95, 122, 0.25);
+  border-radius: var(--radius-sm);
+  color: var(--color-primary);
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.case-compare {
+  display: grid;
+  gap: 24px;
+}
+
+.case-screen {
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+}
+
+.case-screen--after { border-color: var(--color-accent); }
+
+.case-screen__label {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.case-screen--after .case-screen__label { color: var(--color-accent); }
+
+.case-browser {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: #f3f4f5;
+}
+
+.case-browser__bar { height: 12px; background: #d9dde1; }
+.case-browser__site { padding: 14px 14px 6px; font-size: 0.875rem; font-weight: 700; }
+.case-browser__nav { padding: 0 14px 12px; font-size: 0.625rem; color: var(--color-text-muted); }
+.case-browser__blank { min-height: 108px; padding: 42px 16px; background: #d7dbde; color: #707a82; font-size: 0.875rem; text-align: center; }
+.case-browser__lines { padding: 16px; background: var(--color-white); }
+.case-browser__lines i { display: block; width: 100%; height: 6px; margin: 7px 0; background: #dfe4e7; }
+.case-browser__lines i:last-child { width: 65%; }
+.case-browser__tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 12px; background: var(--color-white); }
+.case-browser__tiles b { display: block; aspect-ratio: 1.3; background: #d5dade; }
+.case-browser--after .case-browser__site { color: var(--color-primary); }
+.case-browser--after .case-browser__nav { border-top: 1px solid var(--color-border); padding-top: 8px; }
+.case-browser__hero { min-height: 128px; padding: 25px 18px; background: #a8c6d1; color: #173b4a; font-weight: 700; line-height: 1.55; }
+.case-browser__hero span { display: block; width: max-content; max-width: 100%; margin-top: 16px; padding: 7px 10px; background: var(--color-accent); color: var(--color-white); font-size: 0.6875rem; }
+.case-browser__heading { margin: 0; padding: 14px 14px 0; background: var(--color-white); font-size: 0.8125rem; font-weight: 700; }
+.case-browser__tiles--photos b:nth-child(1) { background: #9db5a3; }
+.case-browser__tiles--photos b:nth-child(2) { background: #c9aa82; }
+.case-browser__tiles--photos b:nth-child(3) { background: #9cb7c4; }
+
+.case-screen__points { margin-top: 18px; }
+.case-screen__points li { padding: 7px 0 7px 18px; position: relative; font-size: 0.8125rem; color: var(--color-text-light); }
+.case-screen__points li::before { content: '•'; position: absolute; left: 0; color: var(--color-accent); font-weight: 700; }
+
+.case-point-grid { display: grid; gap: 16px; }
+.case-point-grid article { padding: 24px; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
+.case-point-grid span { color: var(--color-accent); font-size: 0.8125rem; font-weight: 700; }
+.case-point-grid h3 { margin: 8px 0; font-size: 1rem; }
+.case-point-grid p { color: var(--color-text-light); font-size: 0.875rem; }
+
+.case-cta { padding: 72px 0; background: var(--color-primary); color: var(--color-white); text-align: center; }
+.case-cta h2 { font-size: 1.5rem; }
+.case-cta p:not(.section__label) { margin-bottom: 24px; opacity: 0.88; }
+
 /* ----- Pricing ----- */
 .pricing-grid {
   display: grid;
@@ -1750,5 +1853,19 @@ body {
 
   .contact__title {
     font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .case-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .case-compare {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-point-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
