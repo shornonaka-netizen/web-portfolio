@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="広告運用8年の経験を活かし、問い合わせにつながるLP改善を支援。初期制作3万円〜、月額5,000円〜の更新管理プランあり。整体院・工務店・士業など中小企業向け。">
+  <title>広告運用者のホームページ改善室｜問い合わせにつながるLP改善</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="header">
+    <input type="checkbox" id="menu-toggle" class="header__menu-check" aria-hidden="true">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">広告運用者の<br class="sp-only">ホームページ改善室</a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="#services">サービス</a>
+        <a href="#strengths">強み</a>
+        <a href="#samples">制作例</a>
+        <a href="#pricing">料金</a>
+        <a href="#maintenance">月額管理</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#contact" class="btn btn--primary btn--sm header__cta">無料相談</a>
+      <label for="menu-toggle" class="header__menu-btn" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <!-- モバイルメニュー（CSSのみで開閉） -->
+    <nav class="header__mobile-nav" aria-label="モバイルナビゲーション">
+      <a href="#services">サービス</a>
+      <a href="#strengths">強み</a>
+      <a href="#samples">制作例</a>
+      <a href="#pricing">料金</a>
+      <a href="#maintenance">月額管理</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn--primary">無料相談はこちら</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== 1. ファーストビュー ===== -->
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <!-- キャッチコピー：必要に応じて編集 -->
+          <p class="hero__label">広告運用歴8年 × LP改善専門</p>
+          <h1 class="hero__title">
+            見た目の制作ではなく、<br>
+            <span class="hero__title-accent">問い合わせにつながるLP改善</span>を。
+          </h1>
+          <!-- サブコピー：必要に応じて編集 -->
+          <p class="hero__desc">
+            8年間の広告運用で、クリック後のLP品質が成果を左右する現場を見てきました。整体院・工務店・士業など、地域ビジネスのホームページを「問い合わせが増える導線」に設計し直します。
+          </p>
+          <!-- 料金表示：金額変更時はここを編集 -->
+          <div class="hero__pricing">
+            <div class="hero__pricing-item">
+              <span class="hero__pricing-label">初期制作</span>
+              <span class="hero__pricing-value">3<span class="hero__pricing-unit">万円〜</span></span>
+            </div>
+            <div class="hero__pricing-divider" aria-hidden="true"></div>
+            <div class="hero__pricing-item">
+              <span class="hero__pricing-label">月額管理</span>
+              <span class="hero__pricing-value">5,000<span class="hero__pricing-unit">円〜</span></span>
+            </div>
+          </div>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary btn--lg">無料で改善相談する</a>
+            <a href="#maintenance" class="btn btn--outline btn--lg">月額管理プランを見る</a>
+          </div>
+          <ul class="hero__trust">
+            <li>広告運用歴8年</li>
+            <li>CVRを意識した導線設計</li>
+            <li>公開後の更新も月額で対応</li>
+          </ul>
+        </div>
+        <div class="hero__visual">
+          <!-- Before/Afterカード：実績画像に差し替え可能 -->
+          <div class="ba-card" role="img" aria-label="LP改善のBefore/Afterイメージ">
+            <div class="ba-card__head">
+              <span class="ba-card__badge">改善事例イメージ</span>
+              <span class="ba-card__type">整体院 LP</span>
+            </div>
+            <div class="ba-card__body">
+              <div class="ba-panel ba-panel--before">
+                <span class="ba-panel__label">Before</span>
+                <div class="ba-mock ba-mock--old">
+                  <div class="ba-mock__bar ba-mock__bar--thin"></div>
+                  <div class="ba-mock__block ba-mock__block--sm"></div>
+                  <div class="ba-mock__block ba-mock__block--xs"></div>
+                  <div class="ba-mock__block ba-mock__block--xs"></div>
+                  <div class="ba-mock__text-line"></div>
+                  <div class="ba-mock__text-line ba-mock__text-line--short"></div>
+                </div>
+                <p class="ba-panel__note">情報が散在、CTA不明瞭</p>
+              </div>
+              <div class="ba-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </div>
+              <div class="ba-panel ba-panel--after">
+                <span class="ba-panel__label">After</span>
+                <div class="ba-mock ba-mock--new">
+                  <div class="ba-mock__hero-area"></div>
+                  <div class="ba-mock__cta-btn"></div>
+                  <div class="ba-mock__grid">
+                    <div class="ba-mock__block ba-mock__block--md"></div>
+                    <div class="ba-mock__block ba-mock__block--md"></div>
+                  </div>
+                </div>
+                <p class="ba-panel__note">訴求明確、予約導線を一本化</p>
+              </div>
+            </div>
+            <div class="ba-card__foot">
+              <span class="ba-card__metric">問い合わせ導線を再設計</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. こんなお悩みありませんか ===== -->
+    <section class="section section--gray" id="problems">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__label">PROBLEMS</p>
+          <h2 class="section__title">こんなお悩み、ありませんか？</h2>
+        </div>
+        <ul class="problem-list">
+          <!-- お悩み項目：必要に応じて追加・編集 -->
+          <li class="problem-card">
+            <span class="problem-card__icon" aria-hidden="true">01</span>
+            <p>ホームページはあるが、<strong>問い合わせがほとんど来ない</strong></p>
+          </li>
+          <li class="problem-card">
+            <span class="problem-card__icon" aria-hidden="true">02</span>
+            <p>スマホで見ると<strong>レイアウトが崩れている</strong>、文字が小さすぎる</p>
+          </li>
+          <li class="problem-card">
+            <span class="problem-card__icon" aria-hidden="true">03</span>
+            <p>広告を出しても<strong>LPの質が追いつかず</strong>、費用対効果が悪い</p>
+          </li>
+          <li class="problem-card">
+            <span class="problem-card__icon" aria-hidden="true">04</span>
+            <p>更新したいが、<strong>誰に頼めばいいかわからない</strong></p>
+          </li>
+          <li class="problem-card">
+            <span class="problem-card__icon" aria-hidden="true">05</span>
+            <p>制作会社の見積もりが<strong>高すぎて手が出ない</strong></p>
+          </li>
+          <li class="problem-card">
+            <span class="problem-card__icon" aria-hidden="true">06</span>
+            <p>何年も前のデザインのままで、<strong>信頼感が伝わらない</strong></p>
+          </li>
+        </ul>
+        <div class="section__cta">
+          <p class="section__cta-text">広告運用8年の視点で、現状のLP・サイトを無料診断します。</p>
+          <a href="#contact" class="btn btn--primary">無料でLP改善を相談する</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. 提供サービス ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__label">SERVICES</p>
+          <h2 class="section__title">提供サービス</h2>
+          <p class="section__lead">Web制作の枠を超え、広告流入から問い合わせ完了までの導線を設計・改善します。</p>
+        </div>
+        <div class="service-grid">
+          <!-- サービス1：LP改善（メイン訴求） -->
+          <article class="service-card service-card--featured">
+            <span class="service-card__badge">主力サービス</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3 class="service-card__title">問い合わせにつながるLP改善</h3>
+            <p class="service-card__desc">広告・検索からの流入を前提に、ファーストビュー・訴求コピー・CTA配置を再設計。8年の運用経験に基づき、コンバージョン率の改善を最優先に対応します。</p>
+            <ul class="service-card__list">
+              <li>現状LPの導線診断</li>
+              <li>CTA・フォーム周りの改善</li>
+              <li>計測タグ設置・確認</li>
+            </ul>
+          </article>
+          <!-- サービス2：サイト改善 -->
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3 class="service-card__title">既存ホームページ改善</h3>
+            <p class="service-card__desc">全面リニューアルに頼らず、問い合わせに直結する箇所から優先的に改善。費用対効果の高い改修で、段階的にサイトの成果を引き上げます。</p>
+            <ul class="service-card__list">
+              <li>ファーストビュー・導線の再構成</li>
+              <li>スマホ表示の最適化</li>
+              <li>信頼性を高めるコンテンツ整理</li>
+            </ul>
+          </article>
+          <!-- サービス3：月額管理 -->
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            </div>
+            <h3 class="service-card__title">月額更新・公開管理</h3>
+            <p class="service-card__desc">改善後のサイトを放置しないための継続プラン。テキスト更新から公開作業まで代行し、日々の業務に集中できる環境を整えます。</p>
+            <ul class="service-card__list">
+              <li>月額5,000円〜</li>
+              <li>キャンペーン・料金表の更新</li>
+              <li>GitHub Pages / Cloudflare Pages 公開代行</li>
+            </ul>
+            <a href="#maintenance" class="service-card__link">月額プランの詳細を見る →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. 広告運用者としての強み ===== -->
+    <section class="section section--accent" id="strengths">
+      <div class="container">
+        <div class="section__header section__header--light">
+          <p class="section__label">STRENGTHS</p>
+          <h2 class="section__title">広告運用8年だからできること</h2>
+          <p class="section__lead">デザイン会社とは異なる視点——広告費用のROIを見てきたからこそ、問い合わせ導線に集中できます。</p>
+        </div>
+        <div class="strength-intro">
+          <p class="strength-intro__text">リスティング・SNS広告の運用現場で<strong>8年間</strong>、クリック単価・CVR・CPAの改善に携わってきました。その経験を、ホームページ・LP改善にそのまま活かしています。</p>
+        </div>
+        <div class="strength-grid">
+          <!-- 強み1 -->
+          <article class="strength-card">
+            <span class="strength-card__num">01</span>
+            <h3 class="strength-card__title">広告費用対効果を前提にした設計</h3>
+            <p class="strength-card__desc">「クリックは取れるが問い合わせに至らない」——この構造を何百件も見てきたから、LP上のボトルネックを的確に特定し、改善の優先順位をつけられます。</p>
+          </article>
+          <!-- 強み2 -->
+          <article class="strength-card">
+            <span class="strength-card__num">02</span>
+            <h3 class="strength-card__title">数値に基づく改善提案</h3>
+            <p class="strength-card__desc">アクセス解析・コンバージョン計測の読み取りに精通。感覚ではなく、データと運用知見に裏付けられた改善方針を提示します。</p>
+          </article>
+          <!-- 強み3 -->
+          <article class="strength-card">
+            <span class="strength-card__num">03</span>
+            <h3 class="strength-card__title">中小企業の予算に合った料金設計</h3>
+            <p class="strength-card__desc">初期制作3万円〜、月額管理5,000円〜。大手並みの見積もりではなく、事業規模と成果のバランスを考えた現実的なプランをご提案します。</p>
+          </article>
+          <!-- 強み4 -->
+          <article class="strength-card">
+            <span class="strength-card__num">04</span>
+            <h3 class="strength-card__title">改善後の運用まで一貫対応</h3>
+            <p class="strength-card__desc">LP改善は一度で終わりではありません。月額管理プランで更新・公開・軽微な修正を継続し、改善効果を維持する体制を構築します。</p>
+          </article>
+        </div>
+        <div class="section__cta section__cta--light">
+          <a href="#contact" class="btn btn--white">8年の運用知見で相談する</a>
+          <a href="#maintenance" class="btn btn--outline-white">月額管理プランを見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. 制作サンプル ===== -->
+    <section class="section" id="samples">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__label">WORKS</p>
+          <h2 class="section__title">制作サンプル</h2>
+          <p class="section__lead">業種別の改善イメージです。実績ができ次第、スクリーンショットに差し替えてください。</p>
+        </div>
+        <div class="sample-grid sample-grid--ba">
+          <!-- サンプル1：整体院 Before/After -->
+          <article class="sample-card sample-card--ba">
+            <div class="sample-ba">
+              <div class="sample-ba__panel sample-ba__panel--before">
+                <span class="sample-ba__label">Before</span>
+                <div class="ba-mock ba-mock--old ba-mock--compact">
+                  <div class="ba-mock__bar ba-mock__bar--thin"></div>
+                  <div class="ba-mock__text-line"></div>
+                  <div class="ba-mock__text-line ba-mock__text-line--short"></div>
+                  <div class="ba-mock__block ba-mock__block--xs"></div>
+                </div>
+              </div>
+              <div class="sample-ba__arrow" aria-hidden="true">→</div>
+              <div class="sample-ba__panel sample-ba__panel--after">
+                <span class="sample-ba__label">After</span>
+                <div class="ba-mock ba-mock--new ba-mock--compact">
+                  <div class="ba-mock__hero-area"></div>
+                  <div class="ba-mock__cta-btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="sample-card__body">
+              <span class="sample-card__tag">整体・鍼灸</span>
+              <h3 class="sample-card__title">整体院LP改善</h3>
+              <p class="sample-card__desc">初回限定訴求と予約CTAをファーストビューに集約。離脱ポイントを削減し、問い合わせ導線を一本化。</p>
+            </div>
+          </article>
+          <!-- サンプル2：工務店 Before/After -->
+          <article class="sample-card sample-card--ba">
+            <div class="sample-ba">
+              <div class="sample-ba__panel sample-ba__panel--before">
+                <span class="sample-ba__label">Before</span>
+                <div class="ba-mock ba-mock--old ba-mock--compact">
+                  <div class="ba-mock__bar ba-mock__bar--thin"></div>
+                  <div class="ba-mock__block ba-mock__block--sm"></div>
+                  <div class="ba-mock__block ba-mock__block--sm"></div>
+                  <div class="ba-mock__text-line ba-mock__text-line--short"></div>
+                </div>
+              </div>
+              <div class="sample-ba__arrow" aria-hidden="true">→</div>
+              <div class="sample-ba__panel sample-ba__panel--after">
+                <span class="sample-ba__label">After</span>
+                <div class="ba-mock ba-mock--new ba-mock--compact">
+                  <div class="ba-mock__hero-area"></div>
+                  <div class="ba-mock__grid">
+                    <div class="ba-mock__block ba-mock__block--md"></div>
+                    <div class="ba-mock__block ba-mock__block--md"></div>
+                  </div>
+                  <div class="ba-mock__cta-btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="sample-card__body">
+              <span class="sample-card__tag">工務店・リフォーム</span>
+              <h3 class="sample-card__title">工務店サイト改善</h3>
+              <p class="sample-card__desc">施工事例の見せ方を再構成し、問い合わせフォームまでの導線を短縮。信頼要素を上部に配置。</p>
+            </div>
+          </article>
+        </div>
+        <div class="sample-grid sample-grid--sub">
+          <!-- サンプル3：美容室 -->
+          <article class="sample-card">
+            <div class="placeholder-img placeholder-img--sample" role="img" aria-label="美容室サイトのサンプル画像（仮）">
+              <span>美容室 サイト</span>
+            </div>
+            <div class="sample-card__body">
+              <span class="sample-card__tag">美容室</span>
+              <h3 class="sample-card__title">美容室コーポレートサイト</h3>
+              <p class="sample-card__desc">予約・問い合わせ導線を明確化。スマホ閲覧を前提としたレイアウト設計。</p>
+            </div>
+          </article>
+          <!-- サンプル4：士業 -->
+          <article class="sample-card">
+            <div class="placeholder-img placeholder-img--sample" role="img" aria-label="士業サイトのサンプル画像（仮）">
+              <span>士業 サイト</span>
+            </div>
+            <div class="sample-card__body">
+              <span class="sample-card__tag">士業・専門家</span>
+              <h3 class="sample-card__title">士業ホームページ改善</h3>
+              <p class="sample-card__desc">専門性と信頼感を伝える構成に再設計。相談申込みまでのステップを整理。</p>
+            </div>
+          </article>
+        </div>
+        <div class="section__cta">
+          <a href="#contact" class="btn btn--primary">同業種の改善を相談する</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. 料金プラン ===== -->
+    <section class="section section--gray" id="pricing">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__label">PRICING</p>
+          <h2 class="section__title">料金プラン</h2>
+          <p class="section__lead">初期費用を抑え、改善後は月額管理で継続サポート。事業規模に合わせた柔軟な設計が可能です。</p>
+        </div>
+        <div class="pricing-grid">
+          <!-- プラン1：LP改善 -->
+          <article class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge">おすすめ</span>
+            <h3 class="pricing-card__name">LP改善</h3>
+            <p class="pricing-card__price"><span class="pricing-card__amount">30,000</span>円〜</p>
+            <p class="pricing-card__note">（税別・1ページ）</p>
+            <ul class="pricing-card__features">
+              <li>導線診断・改善提案</li>
+              <li>ファーストビュー・CTA再設計</li>
+              <li>スマホ最適化</li>
+              <li>計測タグ設置確認</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--block">LP改善を相談</a>
+          </article>
+          <!-- プラン2：サイト改善 -->
+          <article class="pricing-card">
+            <h3 class="pricing-card__name">サイト改善</h3>
+            <p class="pricing-card__price"><span class="pricing-card__amount">30,000</span>円〜</p>
+            <p class="pricing-card__note">（税別・既存サイト）</p>
+            <ul class="pricing-card__features">
+              <li>問い合わせ導線の再構成</li>
+              <li>ファーストビュー改善</li>
+              <li>コンテンツ・文章の整理</li>
+              <li>段階的な改修に対応</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline btn--block">サイト改善を相談</a>
+          </article>
+          <!-- プラン3：新規制作 -->
+          <article class="pricing-card">
+            <h3 class="pricing-card__name">新規サイト制作</h3>
+            <p class="pricing-card__price"><span class="pricing-card__amount">80,000</span>円〜</p>
+            <p class="pricing-card__note">（税別・5ページ程度）</p>
+            <ul class="pricing-card__features">
+              <li>問い合わせ導線を設計した構成</li>
+              <li>5ページ程度のコーポレートサイト</li>
+              <li>お問い合わせフォーム設置</li>
+              <li>公開・ドメイン設定サポート</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline btn--block">新規制作を相談</a>
+          </article>
+        </div>
+        <p class="pricing-note">※ 内容・ページ数により変動します。詳細はお見積もりにてご提示いたします。</p>
+        <!-- 月額プランへの導線バナー -->
+        <div class="pricing-banner">
+          <div class="pricing-banner__content">
+            <p class="pricing-banner__label">公開後の更新もお任せください</p>
+            <p class="pricing-banner__title">月額更新・公開管理プラン <strong>5,000円〜</strong>/月</p>
+            <p class="pricing-banner__desc">改善効果を維持するため、テキスト更新から公開作業まで継続的にサポートします。</p>
+          </div>
+          <a href="#maintenance" class="btn btn--primary">月額プランの詳細を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. 月額更新・公開管理プラン ===== -->
+    <section class="section section--maintenance" id="maintenance">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__label">MAINTENANCE</p>
+          <h2 class="section__title">月額更新・公開管理プラン</h2>
+          <p class="section__lead">LP改善の効果は、公開後の運用で決まります。更新の手間を代行し、問い合わせ導線を常に最適な状態に保ちます。</p>
+        </div>
+        <div class="maintenance-box">
+          <div class="maintenance-box__content">
+            <span class="maintenance-box__badge">制作とセットがおすすめ</span>
+            <div class="maintenance-box__price">
+              <span class="maintenance-box__label">月額</span>
+              <span class="maintenance-box__amount">5,000</span>
+              <span class="maintenance-box__unit">円〜（税別）</span>
+            </div>
+            <p class="maintenance-box__lead">初期制作3万円〜と組み合わせることで、改善から運用まで一貫したサポートが可能です。</p>
+            <ul class="maintenance-box__list">
+              <!-- 月額プラン内容：必要に応じて編集 -->
+              <li>テキスト・画像の軽微な更新（月2回まで）</li>
+              <li>営業時間・料金表・キャンペーン情報の変更</li>
+              <li>GitHub Pages / Cloudflare Pages への公開作業</li>
+              <li>表示崩れ・リンク切れの定期チェック</li>
+              <li>メール・チャットでのご相談対応</li>
+            </ul>
+            <p class="maintenance-box__note">更新頻度や作業量に応じてプランをカスタマイズ可能です。</p>
+            <div class="maintenance-box__actions">
+              <a href="#contact" class="btn btn--primary">月額プランを相談する</a>
+              <a href="#pricing" class="btn btn--outline">初期制作プランを見る</a>
+            </div>
+          </div>
+          <div class="maintenance-box__visual">
+            <div class="maintenance-flow">
+              <div class="maintenance-flow__step">
+                <span class="maintenance-flow__num">1</span>
+                <span class="maintenance-flow__text">LP改善・制作</span>
+              </div>
+              <div class="maintenance-flow__arrow" aria-hidden="true">↓</div>
+              <div class="maintenance-flow__step maintenance-flow__step--active">
+                <span class="maintenance-flow__num">2</span>
+                <span class="maintenance-flow__text">月額で更新・公開管理</span>
+              </div>
+              <div class="maintenance-flow__arrow" aria-hidden="true">↓</div>
+              <div class="maintenance-flow__step">
+                <span class="maintenance-flow__num">3</span>
+                <span class="maintenance-flow__text">問い合わせ導線を維持</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 8. よくある質問 ===== -->
+    <section class="section section--gray" id="faq">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__label">FAQ</p>
+          <h2 class="section__title">よくある質問</h2>
+        </div>
+        <div class="faq-list">
+          <!-- FAQ項目：必要に応じて追加・編集 -->
+          <details class="faq-item">
+            <summary class="faq-item__question">Web制作会社との違いは何ですか？</summary>
+            <p class="faq-item__answer">広告運用8年の経験に基づき、デザインの美しさよりも問い合わせ導線・CVR改善を優先します。広告費用対効果の視点でLPを診断・改善する点が、一般的なWeb制作との大きな違いです。</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">まだホームページがなくても依頼できますか？</summary>
+            <p class="faq-item__answer">はい、可能です。事業内容とターゲットをヒアリングしたうえで、問い合わせ導線を設計した新規制作から対応いたします。</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">制作期間はどのくらいかかりますか？</summary>
+            <p class="faq-item__answer">LP改善で約1〜2週間、サイト改善で約1〜2週間、新規5ページサイトで約3〜4週間が目安です。素材のご準備状況により前後します。</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">月額管理プランだけの契約は可能ですか？</summary>
+            <p class="faq-item__answer">はい、既存サイトの更新・公開管理のみのご依頼にも対応しています。まずは現状のサイトURLをお送りいただき、対応範囲をご確認ください。</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">文章や写真の用意は必要ですか？</summary>
+            <p class="faq-item__answer">お持ちの素材があれば活用します。ない場合は、ヒアリング内容をもとに文章のたたき台を作成します。写真はストック素材のご提案も可能です（別途費用の場合あり）。</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">WordPressではなく静的サイトにする理由は？</summary>
+            <p class="faq-item__answer">更新頻度が低い事業者様には、高速・セキュア・低コストな静的サイトが向いています。月額管理プランと組み合わせれば、更新の手間もかかりません。</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">遠方でも依頼できますか？</summary>
+            <p class="faq-item__answer">はい、オンラインでのヒアリング・打ち合わせに対応しています。全国どこからでもご依頼いただけます。</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">支払い方法を教えてください。</summary>
+            <p class="faq-item__answer">銀行振込に対応しています。制作プランは着手金50%・納品時50%が基本です。月額プランは月末締め翌月末払いとなります。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 9. お問い合わせCTA ===== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__content">
+            <p class="section__label section__label--light">CONTACT</p>
+            <h2 class="contact__title">LP改善のご相談は<br>こちらから</h2>
+            <p class="contact__desc">
+              現状のホームページURLをお送りいただければ、広告運用8年の視点で改善ポイントをお伝えします。24時間以内にご返信いたします。
+            </p>
+            <ul class="contact__points">
+              <li>相談・お見積もりは無料</li>
+              <li>初期制作3万円〜 / 月額5,000円〜</li>
+              <li>オンライン打ち合わせ対応</li>
+            </ul>
+          </div>
+          <div class="contact__form-area">
+            <!-- フォーム：実際のフォームサービス（Formspree等）に差し替え -->
+            <form class="contact-form" action="mailto:lp.improvement.support@gmail.com" method="post" enctype="text/plain">
+              <div class="form-group">
+                <label for="name">お名前 <span class="required">必須</span></label>
+                <input type="text" id="name" name="name" required placeholder="山田 太郎">
+              </div>
+              <div class="form-group">
+                <label for="email">メールアドレス <span class="required">必須</span></label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
+              </div>
+              <div class="form-group">
+                <label for="company">会社名・店舗名</label>
+                <input type="text" id="company" name="company" placeholder="〇〇整体院">
+              </div>
+              <div class="form-group">
+                <label for="url">現在のホームページURL</label>
+                <input type="url" id="url" name="url" placeholder="https://">
+              </div>
+              <div class="form-group">
+                <label for="message">ご相談内容 <span class="required">必須</span></label>
+                <textarea id="message" name="message" rows="5" required placeholder="お悩みやご希望をお聞かせください"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--lg btn--block">無料相談を送信する</button>
+            </form>
+            <!-- メールでの問い合わせ：メールアドレスを差し替え -->
+            <p class="contact__alt">
+              メールでのお問い合わせ：<a href="mailto:lp.improvement.support@gmail.com">lp.improvement.support@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== フッター ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__logo">広告運用者のホームページ改善室</p>
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <a href="#services">サービス</a>
+        <a href="#pricing">料金</a>
+        <a href="#maintenance">月額管理</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+      <p class="footer__copy">&copy; 2025 広告運用者のホームページ改善室</p>
+    </div>
+  </footer>
+
+  <!-- 固定CTA（スマホ用） -->
+  <div class="fixed-cta">
+    <a href="#maintenance" class="btn btn--outline btn--sm fixed-cta__sub">月額5,000円〜</a>
+    <a href="#contact" class="btn btn--primary fixed-cta__main">無料相談</a>
+  </div>
+
+</body>
+</html>
