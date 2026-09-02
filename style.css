@@ -1525,6 +1525,42 @@ section[id] {
   gap: 20px;
 }
 
+.contact-form__label {
+  color: var(--color-primary);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.contact-form__title {
+  font-size: 1.375rem;
+  line-height: 1.45;
+}
+
+.contact-form__desc {
+  color: var(--color-text-light);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+
+.contact-form__notes {
+  padding-top: 4px;
+}
+
+.contact-form__notes li {
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+  padding: 3px 0 3px 20px;
+  position: relative;
+}
+
+.contact-form__notes li::before {
+  color: var(--color-primary);
+  content: '✓';
+  font-weight: 700;
+  left: 0;
+  position: absolute;
+}
+
 .form-group label {
   display: block;
   font-size: 0.875rem;
